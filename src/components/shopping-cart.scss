@@ -1,0 +1,71 @@
+.test-container {
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-top: 5rem;
+  -webkit-box-shadow: -3px 0px 79px 9px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -3px 0px 79px 9px rgba(34, 60, 80, 0.2);
+  box-shadow: -3px 0px 79px 9px rgba(34, 60, 80, 0.2);
+  background: linear-gradient(45deg, rgba(225, 234, 255, 0.4), rgba(171, 197, 255, 0.18));
+  border-radius: 1rem;
+}
+
+$b: '.l-card';
+
+#{$b} {
+  &__wrapper {
+    background: linear-gradient(45deg, rgba(225, 234, 255, 0.4), rgba(171, 197, 255, 0.18));
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+
+    & > * {
+      font-weight: 400;
+  }
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 1rem;
+
+    &-short {
+      text-transform: uppercase;
+      color: grey;
+      margin-top: 0;
+    }
+  }
+
+  &__brand {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+    align-items: center;
+  }
+
+  &__btn {
+    color: white;
+    background-color: black;
+    border: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  &__price {
+    font-size: 3rem;
+    font-family: "Arial Unicode MS", sans-serif;
+  }
+}
